@@ -261,7 +261,7 @@ export default defineComponent({
       if (index >= 0) {
         const { key, keyIndex } = getLastKeyBeforeCaret(index)
         const text = lastSearchText = getLastSearchText(index, keyIndex)
-        // Makes sure that key is not first character in editable element and 
+        // Makes sure that key is not first character in editable element and
         // that there is a space before the key. Returns false if these conditions are
         // not met
         if (!(keyIndex < 1 || /\s/.test(getValue()[keyIndex - 1]))) {
